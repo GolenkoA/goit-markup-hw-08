@@ -1,0 +1,12 @@
+.logo {
+    font-family: $logo-font;
+    color: $primary-txt;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &__blue {
+        color: $logo-blue--hover-color;
+    }
+}

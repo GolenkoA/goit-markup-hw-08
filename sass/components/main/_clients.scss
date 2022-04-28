@@ -1,0 +1,38 @@
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
+    color: $icon-socials-team;
+
+    border: 1px solid $icon-socials-team;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: color 250ms $cubic,
+        border 250ms $cubic;
+    
+        &:hover,
+        &:focus {
+            color: $logo-blue--hover-color;
+            border: 1px solid $logo-blue--hover-color;
+        }
+}
+
+.socials-icon {
+    fill: currentColor;
+}
