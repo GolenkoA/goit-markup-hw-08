@@ -4,6 +4,7 @@
 }
 
 .text-label {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -13,17 +14,22 @@
     color: $hero-color--logo-white;
 
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .input-button {
     display: flex;
+    align-items: center;
+    @media screen and (min-width: 0) and (max-width: 1199px) {
+        flex-direction: column;
+    }  
 }
 
 .mailing__in {
-
-    width: 358px;
+    width: 100%;
     padding: 15px 16px;
-    margin-right: 12px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -31,11 +37,22 @@
     border-radius: 4px;
 
     background-color: $background-hero--background-footer;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        max-width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+    }
 }
 
 .mailing__input {
     display: flex;
     align-items: center;
+
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 16px;
@@ -46,6 +63,9 @@
     color: rgba(255, 255, 255, 0.6);
     &::placeholder {
         @extend .mailing__input;
+    }
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
     }
 }
 

@@ -23,7 +23,7 @@
 
     top: 50%;
     left: 50%;
-    width: 528px;
+    width: 450px;
 
 
     background-color: $hero-color--logo-white;
@@ -31,11 +31,16 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $cubic;
 
-    padding: 40px 39px 40px 41px;
+    padding: 40px;
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
         transition: transform 250ms $cubic;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        padding: 40px 39px 40px 41px;
     }
 }
 
@@ -69,7 +74,6 @@
 .order-form {
     display: flex;
     flex-direction: column;
-
 }
 
 .text-featback {
@@ -171,12 +175,16 @@
     margin-bottom: 30px;
 
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
 
     letter-spacing: 0.03em;
 
     color: $text-paragraph--contact-link;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .checkbox {

@@ -11,27 +11,27 @@
 // conponents
 @import "./components/container";
 
-//main page
-//header
+// //main page
+// //header
 @import "./components/header/header";
 @import "./components/header/logotype";
 @import "./components/header/navigation";
 @import "./components/header/contacts";
 
-//main
+// //main
 @import "./components/main/hero";
 @import "./components/main/benefits";
-@import "./components/main/work-team";
 @import "./components/main/our-work";
+@import "./components/main/work-team";
 @import "./components/main/our-team";
 @import "./components/main/clients";
 
-//footer
+// //footer
 @import "./components/footer/footer";
 @import "./components/footer/form-mail";
 
-//modal window
+// //modal window
 @import "./components/modal-window";
 
-//portfolio
+// //portfolio
 @import "./components/portfolio";

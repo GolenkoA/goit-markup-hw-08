@@ -1,10 +1,15 @@
-.work-title,
 .team-title,
 .clients-title {
-    margin-bottom: 50px;
-
-    font-size: 36px;
+    font-size: 28px;
+    margin-bottom: 30px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+
+
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    }
 }
