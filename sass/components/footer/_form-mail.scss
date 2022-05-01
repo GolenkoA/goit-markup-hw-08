@@ -22,7 +22,7 @@
 .input-button {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 0) and (max-width: 1199px) {
+    @media screen and (min-width: 0) and (max-width: (1200px - 0.02)) {
         flex-direction: column;
     }  
 }
@@ -38,7 +38,7 @@
 
     background-color: $background-hero--background-footer;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px){
+    @media screen and (min-width: 768px) and (max-width: (1200px - 0.02)){
         max-width: 450px;
     }
 

@@ -1,29 +1,23 @@
 .header {
+border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+    align-items: center;
 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+  }
 
-      @media screen and (min-width: 768px) {
-        border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+
         
-        background-color: $background-main;
+    background-color: $background-main;
 
-          &__container {
-            display: flex;
-            align-items: center;
-          }
+      &__container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
           
-      }
-
+  }
 }
-
-/* fixed header */
-
-/* .header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-body {
-  margin-top: 80px;
-} */

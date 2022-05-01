@@ -6,6 +6,8 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 
+        z-index: 2;
+
     opacity: 1;
     visibility: visible;
     pointer-events: inherit;
@@ -23,7 +25,7 @@
 
     top: 50%;
     left: 50%;
-    width: 450px;
+    width: 320px;
 
 
     background-color: $hero-color--logo-white;
@@ -31,11 +33,16 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $cubic;
 
-    padding: 40px;
+    padding: 40px 20px;
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
         transition: transform 250ms $cubic;
+    }
+
+    @media screen and (min-width: 450px) {
+        width: 450px;
+        padding: 40px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -56,7 +63,7 @@
     background: $background-main;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 50%;
-    color: #000;
+    color: $primary-txt;
     cursor: pointer;
     padding: 0;
     transition: color 250ms $cubic;
@@ -146,10 +153,14 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    height: 120px;
+    height: 45px;
     outline: none;
 
     transition: border 250ms $cubic;
+
+    @media screen and (min-width: 450px) {
+        height: 120px;
+    }
 
     &::placeholder {
         font-weight: 400;
@@ -204,9 +215,10 @@
 .icon-box {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
 
-    width: 16px;
+    min-width: 16px;
     height: 15px;
     border: solid 2px $primary-txt;
     border-radius: 2px;

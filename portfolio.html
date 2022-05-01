@@ -24,6 +24,19 @@
         <a class="logo container__logo link" href="./index.html" lang="en">
           <span class="logo__blue">Web</span>Studio</a
         >
+
+        <button class="menu-btn" type="button" aria-expanded="false" data-menu-button>
+          <svg
+            class="menu-btn_icon"
+            width="40px"
+            height="40px"
+            aria-label="переключатеть мобильного меню"
+          >
+            <use class="icon-cross" href="./images/icons.svg#close"></use>
+            <use class="icon-menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -313,60 +326,62 @@
 
     <footer class="footer">
       <div class="container footer-display">
-        <div class="adress-block">
-          <a class="logo logo-footer container__logo link" href="./index.html" lang="en"
-            ><span class="logo__blue">Web</span>Studio</a
-          >
-          <address class="address">
-            <p class="address-fact">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="address-list list">
-              <li class="address-item">
-                <a class="address-link link" href="mailto:">info@example.com</a>
+        <div class="block-tablet">
+          <div class="adress-block">
+            <a class="logo logo-footer container__logo link" href="./index.html" lang="en"
+              ><span class="logo__blue">Web</span>Studio</a
+            >
+            <address class="address">
+              <p class="address-fact">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="address-list list">
+                <li class="address-item">
+                  <a class="address-link link" href="mailto:">info@example.com</a>
+                </li>
+                <li class="address-item">
+                  <a class="address-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- socials -->
+          <div class="socials-block">
+            <p class="text-social">присоединяйтесь</p>
+            <ul class="footer-socials list">
+              <li class="footer-socials-item">
+                <a class="footer-socials-link link" href="" aria-label="Instagram">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-item">
-                <a class="address-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-socials-item">
+                <a class="footer-socials-link link" href="" aria-label="Twitter">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a class="footer-socials-link link" href="" aria-label="Facebook">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a class="footer-socials-link link" href="" aria-label="Linkedin">
+                  <svg class="footer-socials-icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <!-- socials -->
-        <div class="socials-block">
-          <p class="text-social">присоединяйтесь</p>
-          <ul class="footer-socials list">
-            <li class="footer-socials-item">
-              <a class="footer-socials-link link" href="" aria-label="Instagram">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-item">
-              <a class="footer-socials-link link" href="" aria-label="Twitter">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-item">
-              <a class="footer-socials-link link" href="" aria-label="Facebook">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-socials-item">
-              <a class="footer-socials-link link" href="" aria-label="Linkedin">
-                <svg class="footer-socials-icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <!-- form mail -->
-        <form class="mailing" action="">
+        <form class="mailing">
           <label class="text-label" for="mail">Подпишитесь на рассылку</label>
           <div class="input-button">
             <input
@@ -386,6 +401,62 @@
         </form>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+
+    <!-- mobil menu window -->
+
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mob-nav_list list">
+            <li class="mob-nav_item">
+              <a class="nav__link--mob link" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-nav_item">
+              <a class="nav__link--mob link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-nav_item">
+              <a class="nav__link--mob link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-contacts-overlay">
+          <div class="mobile-contacts">
+            <ul class="mob-contacts_list list">
+              <li class="mob-contacts_item">
+                <a class="mob-contacts_tel link" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-contacts_item">
+                <a class="mob-contacts_mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-social">
+            <ul class="mob-social_list list">
+              <li class="mob-social_item">
+                <a class="mob-social_link" href="" target="_blank" rel="noopener noreferrel"></a
+                >Instagram
+              </li>
+              <li class="mob-social_item">
+                <a class="mob-social_link" href="" target="_blank" rel="noopener noreferrel"></a
+                >Twitter
+              </li>
+              <li class="mob-social_item">
+                <a class="mob-social_link" href="" target="_blank" rel="noopener noreferrel"></a
+                >Facebook
+              </li>
+              <li class="mob-social_item">
+                <a class="mob-social_link" href="" target="_blank" rel="noopener noreferrel"></a
+                >LinkedIn
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
