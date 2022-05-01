@@ -151,7 +151,6 @@
 .mob-social_item {
 
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-    color: $logo-blue--hover-color;
 
     line-height: 1.222;
     font-size: 18px;
@@ -178,6 +177,10 @@
         padding-left: 10px;
 
     }
+}
+
+.mob-social_link {
+    color: $logo-blue--hover-color;
 }
 
 .mob-social_list {

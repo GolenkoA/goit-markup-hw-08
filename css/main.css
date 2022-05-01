@@ -282,7 +282,6 @@ img {
 
 .mob-social_item {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  color: #2196f3;
   line-height: 1.222;
   font-size: 18px;
   font-size: 11px;
@@ -305,6 +304,10 @@ img {
     padding-right: 10px;
     padding-left: 10px;
   }
+}
+
+.mob-social_link {
+  color: #2196f3;
 }
 
 .mob-social_list {
